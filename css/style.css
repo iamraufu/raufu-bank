@@ -1,34 +1,64 @@
 body {
-    padding: 100px;
+    padding: 0 100px;
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+}
+
+#name {
+    color: #5379b8;
 }
 
 .submit-area {
     margin-top: 50px;
-    display: block;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px grey;
     padding: 40px;
+    border-radius: 10px !important;
+    box-shadow: 5px 5px 10px #5379b8 !important;
 }
 
-#transaction-area {
+#login,
+.deposit-button,
+.withdraw-button {
+    background: #7474BF;
+    background: -webkit-linear-gradient(to right, #348AC7, #7474BF);
+    background: linear-gradient(to right, #348AC7, #7474BF);
+}
+
+.form-content {
+    margin: 20px 0;
+}
+
+#transaction {
     display: none;
 }
 
+.status {
+    border-radius: 10px;
+    margin: 0 20px;
+    padding: 20px;
+    color: azure;
+    /* width: 30%; */
+    height: 120px;
+}
+
 .deposit {
-    background-color: slateblue;
+    background: #4DA0B0;
+    background: -webkit-linear-gradient(to right, #D39D38, #4DA0B0);
+    background: linear-gradient(to right, #D39D38, #4DA0B0);
 }
 
 .withdraw {
-    background-color: lightsalmon;
+    background: #2C3E50;
+    background: -webkit-linear-gradient(to right, #FD746C, #2C3E50);
+    background: linear-gradient(to right, #FD746C, #2C3E50);
 }
 
 .balance {
-    background-color: orange;
-}
-
-.status {
-    margin: 10px;
-    padding: 10px;
-    color: white;
-    border-radius: 10px;
+    background: #000428;
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    background: linear-gradient(to right, #004e92, #000428);
 }
